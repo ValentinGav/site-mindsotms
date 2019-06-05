@@ -1,0 +1,175 @@
+body{
+	font-family: 'Source code pro', Calibri, serif; 
+	margin: 0px;
+	padding:  0px;
+}
+
+nav{
+	display: block;
+	width:  100%;
+	background-color: white ; 
+}
+
+nav a{
+	display:  inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+nav > ul > li:hover > a{
+	padding: 15px 30px 20px 30px;
+}
+
+nav > ul {
+	margin: 0px;
+	padding:  0px;
+}
+
+nav > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li {
+	float:  left;
+	position: relative;
+}
+
+nav li {
+	list-style-type:  none;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding:  0px;
+	z-index: 100000;
+}
+
+header{
+	background-color: white;
+	border: none;
+	margin: 0px;
+	padding:  0px;
+}
+
+header > h1 {
+	text-align: center;
+}
+
+header .image_header{
+	float: left;
+	width: 500px;
+
+}
+
+.submenu{
+	display: none;
+}
+
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13;
+	color: #222538;
+	width: 270px;
+}
+
+.submenu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+
+/*
+	Couleur des menus quand la souris est dessus
+*/
+.menu1:hover{
+	border-top: 5px solid rgb(0,160,240);
+	background-color:  rgba(0, 110, 200, 0.15);
+}
+
+.menu2:hover{
+	border-top: 5px solid #0070bb;
+	background-color:  rgba(000, 112, 192, 0.15);
+}
+
+.menu3:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color:  rgba(241, 211, 79, 0.15);
+}
+
+.menu4:hover{
+	border-top: 5px solid #BBB;
+	background-color:  rgba(220, 220, 200, 0.15);
+}
+
+/*
+	Couleur des sous-menus de chaque menus
+*/
+.menu1 .submenu{
+	background-color: rgb(0, 160, 240);
+}
+
+.menu2 .submenu{
+	background-color: rgb(000, 160, 240);
+}
+
+.menu3 .submenu{
+	background-color: rgb(251, 216, 99);
+}
+
+.menu4 .submenu{
+	background-color: rgb(230, 100, 40);
+}
+
+/*
+	Couleur des sous-menus de chaque menus quand la souris est dessus
+*/
+.menu1 .submenu li:hover{
+	background-color: rgb(0, 110, 200);
+}
+
+.menu2 .submenu li:hover{
+	background-color: rgb(000, 115, 200);
+}
+
+.menu3 .submenu li:hover{
+	background-color: rgb(200, 165, 75);
+}
+
+.menu4 .submenu li:hover{
+	background-color: rgb(210, 77, 60);
+}
+.texte
+{
+	color:black;
+	text-align: center;
+	margin: 50px;
+	text-align: justify;
+}
+.lesmenus
+{
+	background-color: black;
+}
+@media all and (max-width: 1024px)
+{
+	header
+	{
+		width : auto;
+	}
+	nav
+	{
+		width : auto;
+	}
+	
+}
